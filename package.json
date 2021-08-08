@@ -1,0 +1,21 @@
+{
+  "name": "udemonia-to-do",
+  "version": "0.0.1",
+  "description": "simple-local-storage-to-do-cli-in-node",
+  "main": "cli.js",
+  "scripts": {
+    "test": "jest cli.js"
+  },
+  "keywords": [
+    "to-do",
+    "cli",
+    "node"
+  ],
+  "author": "brandon lambert",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^8.1.0",
+    "inquirer": "^8.1.2"
+  }
+}

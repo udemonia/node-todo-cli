@@ -1,0 +1,16 @@
+[
+  {
+    "name": "example one",
+    "dateAdded": "2021-06-08",
+    "notes": "example notes",
+    "completed": false,
+    "dateCompleted": null
+  },
+  {
+    "name": "example two",
+    "dateAdded": "2021-08-08",
+    "notes": "example notes - example two task",
+    "completed": true,
+    "dateCompleted": "2021-08-08"
+  }
+]
