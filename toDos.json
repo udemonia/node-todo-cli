@@ -14,9 +14,9 @@
     "dateCompleted": "2021-08-08"
   },
   {
-    "name": "finish everything by right now",
+    "name": "adding a task",
     "dateAdded": "2021-08-08",
-    "notes": "",
+    "notes": "to demo things!",
     "completed": true,
     "dateCompleted": "2021-08-08"
   }

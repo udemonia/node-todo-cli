@@ -2,6 +2,9 @@
 
 This is a simple, local storage CLI for quick to-dos. The data is stored locally in a JSON file
 
+![](simple-task-cli.gif)
+
+
 The basic data structure of a to-do is as follows:
 
 ```js
