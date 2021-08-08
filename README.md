@@ -53,3 +53,24 @@ View all completed to-dos
 for more help or to see all of the available commands
 
 > node cli.js help
+
+``` bash
+
+😀 $node cli.js help
+Usage: cli [options] [command]
+
+to-do-cli
+
+Options:
+  -V, --version     output the version number
+  -h, --help        display help for command
+
+Commands:
+  new|n             Add a new task to the list
+  markComplete|mc   Mark a task as completed! ✅
+  listAll|la        List all the tasks (open & completed)
+  listCompleted|lc  List all of the completed tasks ✅
+  listOpen|lo       List all the open tasks ❌
+  help [command]    display help for command
+
+```
