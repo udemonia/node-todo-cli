@@ -12,5 +12,12 @@
     "notes": "example notes - example two task",
     "completed": true,
     "dateCompleted": "2021-08-08"
+  },
+  {
+    "name": "finish everything by right now",
+    "dateAdded": "2021-08-08",
+    "notes": "",
+    "completed": true,
+    "dateCompleted": "2021-08-08"
   }
 ]

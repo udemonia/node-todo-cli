@@ -166,10 +166,11 @@ program
         console.log('Name: ' + chalk.magenta(newName))
         console.log('Date Added: ' + chalk.magenta(theToDoWeCareAbout.dateAdded))
         console.log('Notes: ' + chalk.magenta(theToDoWeCareAbout.notes))
-        if (theToDoWeCareAbout.completed == false) {
-          console.log('Completed: ❌')  
+        if (theToDoWeCareAbout.completed === false) {
+          console.log('Completed: ❌') 
         } else {
-          console.log('Completed: ✅')  
+          console.log('Completed: ✅')
+          console.log('Date Completed: ' + chalk.magenta(theToDoWeCareAbout.dateCompleted))
         }
       })
   })
