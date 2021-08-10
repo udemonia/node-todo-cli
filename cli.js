@@ -43,15 +43,18 @@ program
   .alias('n')
   .description('Add a new task to the list')
   .action(() => {
-    prompt(newToDoPrompts)
-      .then(({toDo, notes}) => {
+    // let name = process.argv.join('');
+    let name = process.argv.splice(3, process.argv.length - 1).join(' ')
+    if (name) {
+      prompt({name: 'notes', message: 'Notes'})
+      .then(({notes}) => {
 
         //? get the toDos
         const toDos = getToDos()
 
         //* Lets create our new Object
         const newToDo = {
-          "name": toDo,
+          "name": capitalizePresentationLayer(name),
           "dateAdded": today,
           "notes": notes,
           "completed": false,
@@ -63,7 +66,36 @@ program
 
         //? overwrite the file in the file system
         saveToDos(toDos)
+        console.log('\n' + chalk.green.bold.inverse(` Added: ${name} `))
+        process.exit()
+
       })
+
+    } else {
+      prompt(newToDoPrompts)
+      .then(({toDo, notes}) => {
+
+        //? get the toDos
+        const toDos = getToDos()
+
+        //* Lets create our new Object
+        const newToDo = {
+          "name": capitalizePresentationLayer(toDo),
+          "dateAdded": today,
+          "notes": notes,
+          "completed": false,
+          "dateCompleted": null
+        }
+
+        //? append it to our toDos
+        toDos.push(newToDo)
+
+        //? overwrite the file in the file system
+        saveToDos(toDos)
+        console.log('\n' + chalk.green.bold.inverse(` Added: ${toDo} `))
+      })
+    }
+
   })
 
 //! Complete a task command
@@ -106,6 +138,7 @@ program
         updatedToDoList.push(updatedToDoToComplete)
         saveToDos(updatedToDoList);
         console.log(chalk.green(`${selected}\nMarked as complete ✅ `));
+        console.log('')
       })
   })
 
@@ -130,6 +163,7 @@ program
         const singleToDo = toDos.filter(todo => todo.name == selected);
         const theToDoWeCareAbout = singleToDo[0];
         const newName = capitalizePresentationLayer(theToDoWeCareAbout.name)
+        console.log('')
         console.log('Name: ' + chalk.magenta(newName))
         console.log('Date Added: ' + chalk.magenta(theToDoWeCareAbout.dateAdded))
         console.log('Notes: ' + chalk.magenta(theToDoWeCareAbout.notes))
@@ -138,6 +172,7 @@ program
         } else {
           console.log('Completed: ✅')
           console.log('Date Completed: ' + chalk.magenta(theToDoWeCareAbout.dateCompleted))
+          console.log('')
         }
       })
   })
@@ -163,6 +198,7 @@ program
         const singleToDo = toDos.filter(todo => todo.name == selected);
         const theToDoWeCareAbout = singleToDo[0];
         const newName = capitalizePresentationLayer(theToDoWeCareAbout.name)
+        console.log('')
         console.log('Name: ' + chalk.magenta(newName))
         console.log('Date Added: ' + chalk.magenta(theToDoWeCareAbout.dateAdded))
         console.log('Notes: ' + chalk.magenta(theToDoWeCareAbout.notes))
@@ -171,6 +207,7 @@ program
         } else {
           console.log('Completed: ✅')
           console.log('Date Completed: ' + chalk.magenta(theToDoWeCareAbout.dateCompleted))
+          console.log('')
         }
       })
   })
@@ -197,13 +234,13 @@ program
         const singleToDo = toDos.filter(todo => todo.name == selected);
         const theToDoWeCareAbout = singleToDo[0];
         const newName = capitalizePresentationLayer(theToDoWeCareAbout.name)
-        console.log('Name: ' + chalk.magenta(newName))
+        console.log('\nName: ' + chalk.magenta(newName))
         console.log('Date Added: ' + chalk.magenta(theToDoWeCareAbout.dateAdded))
         console.log('Notes: ' + chalk.magenta(theToDoWeCareAbout.notes))
         if (theToDoWeCareAbout.completed == false) {
           console.log('Completed: ❌')  
         } else {
-          console.log('Completed: ✅')  
+          console.log('Completed: ✅\n')  
         }
       })
   })

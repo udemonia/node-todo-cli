@@ -1,23 +1,30 @@
 [
   {
-    "name": "example one",
+    "name": "Example 1",
     "dateAdded": "2021-06-08",
-    "notes": "example notes",
+    "notes": "example notes for example 1",
     "completed": false,
     "dateCompleted": null
   },
   {
-    "name": "example two",
+    "name": "Example 2",
     "dateAdded": "2021-08-08",
-    "notes": "example notes - example two task",
+    "notes": "example notes - for example 2",
     "completed": true,
     "dateCompleted": "2021-08-08"
   },
   {
-    "name": "adding a task",
-    "dateAdded": "2021-08-08",
-    "notes": "to demo things!",
+    "name": "New Task",
+    "dateAdded": "2021-08-10",
+    "notes": "some notes about the task",
+    "completed": false,
+    "dateCompleted": null
+  },
+  {
+    "name": "This Is My Task",
+    "dateAdded": "2021-08-10",
+    "notes": "some notes about the task",
     "completed": true,
-    "dateCompleted": "2021-08-08"
+    "dateCompleted": "2021-08-10"
   }
 ]

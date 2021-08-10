@@ -4,11 +4,13 @@ This is a simple, local storage CLI for quick to-dos. The data is stored locally
 
 npm download
 
+``` shell
 > npm i udemonia-to-do
+```
 
 ![](simple-task-cli.gif)
 
-The basic data structure of a to-do is as follows:
+## The basic data structure of a to-do
 
 ```js
 [
@@ -23,15 +25,35 @@ The basic data structure of a to-do is as follows:
 
 ```
 
-There are some basic commands to add and update to-dos
+## Basic To Do Commands
 
-Add a new to-do
+### Add a new to-do
 
+``` console
 > node cli.js new
+```
 
-Find all non-completed to-dos and mark them completed
+You will be prompted for the name of the task and any notes you'd want to add
 
-> node cli mc
+``` bash
+$ node cli.js new
+? To Do
+? Notes
+```
+
+*Notes default to an empty string if you press enter without adding notes*
+
+You can also skip the 'To Do' prompt by adding the name after the new command
+
+``` console
+> node cli.js new My Task Title
+```
+
+### Find all non-completed to-dos and mark them completed
+
+``` console
+> node cli.js new mc
+```
 
 note: this will update the completed to true while adding today's date as the date completed
 
@@ -48,17 +70,23 @@ note: this will update the completed to true while adding today's date as the da
 
 ```
 
-View all open to-dos
+### View all open to-dos
 
+``` console
 > node cli.js lo
+```
 
-View all completed to-dos
+### View all completed to-dos
 
+``` console
 > node cli.js lc
+```
 
-for more help or to see all of the available commands
+## Help
 
+``` console
 > node cli.js help
+```
 
 ``` bash
 
@@ -83,7 +111,7 @@ Commands:
 
 ---
 
-## Note
+## ~/.bash_profile alias
 
 You can add an alias to your .bash_profile and run the alias from any directory
 
@@ -91,10 +119,22 @@ e.g.
 
 Get the present working directory
 
+``` console
 > pwd
+```
 
 copy the present working directory, open vim or any other text editor and paste it inside the bash shell alias
 
+``` console
 > vim ~/.bash_profile
+```
 
-alias task='node /Users/my-path-to-download/to-do-cli
+> alias task='node /Users/my-path-to-download/to-do-cli
+
+Once saved, open a new terminal session and any of the commands above can be ran from any directory with the alias
+
+e.g.
+
+``` console
+> task new my task title
+```
