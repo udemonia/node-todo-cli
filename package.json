@@ -1,6 +1,6 @@
 {
   "name": "udemonia-to-do",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "simple-local-storage-to-do-cli-in-node",
   "main": "cli.js",
   "scripts": {

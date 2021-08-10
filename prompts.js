@@ -1,6 +1,6 @@
 const newToDoPrompts = [
     { name: 'toDo', message: 'To Do' },
-    {name: 'notes', message: 'notes'},
+    {name: 'notes', message: 'Notes'},
   ]
   
   module.exports = {newToDoPrompts}
