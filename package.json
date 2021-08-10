@@ -4,13 +4,19 @@
   "description": "simple-local-storage-to-do-cli-in-node",
   "main": "cli.js",
   "scripts": {
-    "test": "jest cli.js"
+    "start": "node cli.js",
+    "help": "node cli.js help"
   },
   "keywords": [
     "to-do",
     "cli",
-    "node"
+    "node",
+    "task"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/udemonia/node-todo-cli"
+  },
   "author": "brandon lambert",
   "license": "ISC",
   "dependencies": {

@@ -2,8 +2,11 @@
 
 This is a simple, local storage CLI for quick to-dos. The data is stored locally in a JSON file
 
-![](simple-task-cli.gif)
+npm download
 
+> npm i udemonia-to-do
+
+![](simple-task-cli.gif)
 
 The basic data structure of a to-do is as follows:
 
@@ -77,3 +80,21 @@ Commands:
   help [command]    display help for command
 
 ```
+
+---
+
+## Note
+
+You can add an alias to your .bash_profile and run the alias from any directory
+
+e.g.
+
+Get the present working directory
+
+> pwd
+
+copy the present working directory, open vim or any other text editor and paste it inside the bash shell alias
+
+> vim ~/.bash_profile
+
+alias task='node /Users/my-path-to-download/to-do-cli
