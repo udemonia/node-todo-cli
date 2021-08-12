@@ -2,13 +2,25 @@
 
 This is a simple, local storage CLI for quick to-dos. The data is stored locally in a JSON file
 
+![](simple-task-cli.gif)
+
 npm download
 
 ``` shell
 > npm i udemonia-to-do
 ```
 
-![](simple-task-cli.gif)
+## For NPM package use after installing the NPM package
+
+``` bash
+$ touch cli.js
+```
+
+In the cli.js file, require the package
+
+``` js
+const toDoCLI = require('udemonia-to-do')
+```
 
 ## The basic data structure of a to-do
 
