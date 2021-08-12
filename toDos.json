@@ -7,24 +7,17 @@
     "dateCompleted": null
   },
   {
-    "name": "Example 2",
-    "dateAdded": "2021-08-08",
-    "notes": "example notes - for example 2",
-    "completed": true,
-    "dateCompleted": "2021-08-08"
-  },
-  {
-    "name": "New Task",
-    "dateAdded": "2021-08-10",
-    "notes": "some notes about the task",
+    "name": "Show Ppl Another Way Of Adding A To Do",
+    "dateAdded": "2021-08-12",
+    "notes": "demo only!!",
     "completed": false,
     "dateCompleted": null
   },
   {
-    "name": "This Is My Task",
-    "dateAdded": "2021-08-10",
-    "notes": "some notes about the task",
+    "name": "Show Ppl The To Do Cli",
+    "dateAdded": "2021-08-12",
+    "notes": "",
     "completed": true,
-    "dateCompleted": "2021-08-10"
+    "dateCompleted": "2021-08-12"
   }
 ]

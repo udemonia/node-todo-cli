@@ -34,7 +34,7 @@ function capitalizePresentationLayer(str) {
 
 //! Program info
 program
-  .version('0.0.3')
+  .version('0.0.4')
   .description('to-do-cli')
 
 //! the New command
