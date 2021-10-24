@@ -1,6 +1,6 @@
 # Simple Command Line Tool For Tasks
 
-This is a simple, local storage CLI for quick to-dos. The data is stored locally in a JSON file
+Local storage task CLI built with Commander
 
 ![](simple-task-cli.gif)
 
